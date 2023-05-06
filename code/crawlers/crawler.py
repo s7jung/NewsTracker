@@ -9,7 +9,7 @@ soup = BeautifulSoup(res.text, 'html.parser')
 # a list storing the news articles containing the keyword
 contains_keyword = []
 
-articles = soup.find_all('h3', {'class': 'container__headline __headline'})
+articles = soup.find_all('h3', {'class': 'container__headline__headline'})
 print(f"Number of articles found: {len(articles)}")
 
 for article in articles:
